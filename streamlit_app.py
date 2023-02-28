@@ -15,7 +15,7 @@ my_first_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.co
 my_first_list = my_first_list.set_index('Fruit')  # Fruit is the first column title in the fruit_macros.txt
 
 #Let's put a [ick list here so they can pick the fruit they want to include
-streamlit.multiselect("Pick some fruits:", list(my_first_list.index))
+streamlit.multiselect("Pick some fruits:", list(my_first_list.index), ['Avocado', 'Strawberries'])
 
 #display the table on the page
 streamlit.dataframe(my_first_list)
