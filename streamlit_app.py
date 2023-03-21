@@ -34,7 +34,8 @@ try:
 # output it the screen as a table
 #streamlit.dataframe(fruityvice_normalized)
 
-  fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+  #fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+  fruit_choice = streamlit.text_input('What fruit would you like information about?')
   if not fruit_choice:
     streamlit.error("Please select a fruit to get information")
   else:
